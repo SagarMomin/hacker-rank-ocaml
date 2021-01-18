@@ -1,0 +1,10 @@
+(library
+ (name arrays_lib)
+ (libraries 
+    core
+    async
+    yojson
+    ppx_deriving_yojson
+  )
+ (inline_tests)
+ (preprocess (pps ppx_jane ppx_deriving_yojson)))

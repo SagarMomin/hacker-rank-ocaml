@@ -1,0 +1,12 @@
+(executable
+ (name hacker_rank)
+ (public_name hacker_rank)
+ (libraries 
+    core
+    async
+    yojson
+    ppx_deriving_yojson
+    warm_up_lib
+    arrays_lib
+  )
+ (preprocess (pps ppx_jane ppx_deriving_yojson)))
