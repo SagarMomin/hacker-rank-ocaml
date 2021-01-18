@@ -21,7 +21,6 @@ let handle_case one_case =
           let best_place_in_line_index = best_place_in_line - 1 in
           Array.slice one_case best_place_in_line_index place_in_line
           |> Array.fold ~init:0 ~f:(fun bribes x ->
-                 printf "moo";
                  if x > starting_place then bribes + 1 else bribes)
         in
         bribes_taken + bribes
